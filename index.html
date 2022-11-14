@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Personalização de camisas</h1>
+        
+        <div class="container">
+            <img src="./img/img01.png" width="320" height="205" />
+        </div>
+    </header>
+
+    <main>
+        <section class="carrossel" id="carrossel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/camisa01.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/camisa05.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/camisa02.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/camisa03.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/camisa04.jpg" alt="">
+                  </div>
+                </div>
+            </div>
+            
+            <h2 class="titulo-carrossel">Camisas Personalizadas</h2>
+            <a href="https://konanslvv.github.io/AtividadeMarquinhuuus/" 
+            target="_blank"class="link-carrossel">Personalize Aqui</a>
+
+         </section>
+
+         <section class="camisas" id="camisas">
+            <div class="div-bolos">
+                <img src="./img/camisa07.png" alt="" class="img-camisas">
+            </div>
+            
+            <div class="div-camisas" id="camisas">
+                <div class="div-camisas" style="order: 2;">
+                    <img src="img/camisa06.jpg" alt="" class="img-camisas">
+                </div>
+            </div>
+        </section>
+
+        <section class="camisas" id="camisas">
+          <div class="div-bolos">
+              <img src="./img/camisa08.jpg" alt="" class="img-camisas">
+          </div>
+          
+          <div class="div-camisas" id="camisas">
+              <div class="div-camisas" style="order: 2;">
+                  <img src="img/img09.jpg" alt="" class="img-camisas">
+              </div>
+          </div>
+      </section>
+
+      <section class="camisas" id="camisas">
+        <div class="div-bolos">
+            <img src="./img/img10.jpg" alt="" class="img-camisas">
+        </div>
+        
+        <div class="div-camisas" id="camisas">
+            <div class="div-camisas" style="order: 2;">
+                <img src="img/img11.jpg" alt="" class="img-camisas">
+            </div>
+        </div>
+    </section>
+        
+        
+    </main>
+    <footer class="footer">
+        <div class="div-footer">
+            <h1 class="txt-footer" id="contatos">Contatos</h1>
+        </div>
+        <div class="div-footer">
+            <ul class="lista-footer">
+                <li class="item-footer">
+                    <img src="./img/insta.webp" alt="" class="img-footer"></li>
+                    
+                <li class="item-footer">
+                    <img src="./img/pngwing.com.png" alt="" class="img-footer"></li>
+                <li class="item-footer">
+                    <img src="./img/pngwing.com (1).png" alt="" class="img-footer"></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script> 
+        const menu = document.getElementById('icone-menu');
+        const link = document.getElementsByClassName('item-menu');
+   
+        menu.addEventListener('click',()=>{
+            for(i=0;i<=link.length;i++){
+                link[i].classList.toggle('ativar');
+            }
+        })
+    </script>
+</body>
+</html>
