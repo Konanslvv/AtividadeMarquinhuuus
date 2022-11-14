@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300&display=swap');
+.header{
+    font-family: 'Marhey', cursive;
+    min-height: 10vh;
+    width: 100%;
+    background-color:rgb(18, 21, 214) ;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.container img {
+    max-width:250px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
